@@ -1,48 +1,76 @@
 ﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+/* Gradiente no Header para visual moderno */
+/* Cores para o cabeçalho */
+.navbar {
+    background: linear-gradient(to right, #0000FF, #33c4ff);
 }
 
-a {
-  color: #0077cc;
+.navbar-brand {
+    color: white !important; /* Cor do nome da marca */
+}
+
+.nav-link {
+    color: white !important; /* Cor dos links no menu */
+}
+
+    .nav-link:hover {
+        color: #e2e2e2 !important; /* Cor do link quando o mouse está sobre */
+    }
+
+.footer {
+    background: linear-gradient(to right, #0000FF, #33c4ff); /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto no rodapé */
+    position: fixed; /* Fixa o rodapé na parte inferior da tela */
+    bottom: 0; /* Posiciona na parte inferior */
+    left: 0;
+    right: 0; /* Para ocupar toda a largura */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0; /* Espaçamento em cima e embaixo do rodapé */
+}
+
+    .footer a {
+        color: #e2e2e2; /* Cor dos links no rodapé */
+    }
+
+        .footer a:hover {
+            color: #fff; /* Cor do link quando o mouse está sobre */
+        }
+
+/* Estilos para a barra de busca */
+.form-control {
+    border-radius: 0.25rem; /* Bordas arredondadas */
+    margin-right: 10px; /* Espaço entre a barra de busca e o botão */
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
+    .btn-primary:hover {
+        background-color: #1861ac; /* Cor ao passar o mouse sobre o botão */
+        border-color: #154d73; /* Cor da borda ao passar o mouse sobre o botão */
+    }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+    font-size: 1rem;
+    line-height: inherit;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+.container {
+    padding-bottom: 10px; /* Espaço para o rodapé fixo */
 }
